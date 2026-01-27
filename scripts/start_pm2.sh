@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting application with PM2"
-cd /home/ubuntu/Nodes
+cd home/ubuntu/testcode
 pm install  # Ensure dependencies are installed
 pm run build  # Build the application if needed
 pm2 start index.js --name nodejs-app --watch
