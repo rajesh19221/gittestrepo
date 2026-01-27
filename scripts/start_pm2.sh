@@ -6,6 +6,9 @@ echo "Starting application with PM2"
 APP_DIR="/home/ubuntu/testcode"
 APP_NAME="nodejs-app"
 
+# ✅ Ensure directory exists (CRITICAL FIX)
+mkdir -p "$APP_DIR"
+
 cd "$APP_DIR"
 
 npm install --omit=dev
